@@ -29,7 +29,7 @@ namespace aaa {
         auto zip_index = addresses.get_index<name("zip")>();
         auto itr = zip_index.find(zipnumb);
 //        if(itr != zip_index.end()){
-                eosio::print("itr->account_name: ", uint_to_string(itr->account_name));  // 仅会显示Jackie Chen    
+                eosio::print("itr->account_name: ", uint_to_string(itr->account_name));  // 仅会显示baobao    
 //        }
         eosio_assert(itr->account_name == name("dan").value, "Lock arf, Incorrect Record ");
     }
